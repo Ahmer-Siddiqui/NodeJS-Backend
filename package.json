@@ -2,8 +2,9 @@
   "name": "chai-backend",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
