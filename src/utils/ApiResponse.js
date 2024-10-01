@@ -1,0 +1,17 @@
+class ApiResponse{
+    constructor(statusCode, data, message = "Success") {
+        this.statusCode = statusCode
+        this.data = data
+        this.message = message
+        this.success = statusCode < 400;
+        this.errors = errors
+        if (statck) {
+            this.stack = statck
+        }
+        else {
+            Error.captureStackTrace(this, this.constructor)
+        }
+    }
+}
+
+export { ApiError }
